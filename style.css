@@ -1,0 +1,423 @@
+/* الألوان والسمات الـ VIP */
+:root {
+    --bg-dark-core: #07090e;
+    --bg-glass: rgba(21, 28, 48, 0.45);
+    --border-glass: rgba(255, 255, 255, 0.05);
+    
+    --color-gold: #d4af37;
+    --color-gold-glow: rgba(212, 175, 55, 0.3);
+    
+    --color-purple: #9b5de5;
+    --color-purple-glow: rgba(155, 93, 229, 0.3);
+    
+    --text-pure: #ffffff;
+    --text-muted: #8a99ad;
+    
+    --luxury-transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--bg-dark-core);
+    color: var(--text-pure);
+    line-height: 1.8;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* هالات إضاءة نيون بالخلفية */
+.bg-glow {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(155, 93, 229, 0.08) 0%, rgba(0,0,0,0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* الهيدر البريميوم */
+.vip-header {
+    padding: 60px 0 30px 0;
+    text-align: center;
+}
+
+.vip-badge {
+    display: inline-block;
+    padding: 6px 20px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid var(--color-gold);
+    color: var(--color-gold);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px var(--color-gold-glow);
+}
+
+.vip-header h1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #ffffff 30%, #a2b4cd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* تنسيق الصورة الدائرية للفقيد وضمان ثبات أبعادها */
+.profile-image-wrapper {
+    margin: 30px auto 10px auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deceased-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 3px solid var(--color-gold); 
+    box-shadow: 0 0 20px var(--color-gold-glow); 
+    transition: var(--luxury-transition);
+}
+
+.deceased-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+    border-color: #fff;
+}
+
+/* لوحة الآية الزجاجية الجذابة */
+.glass-panel {
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-glass);
+    border-radius: 24px;
+}
+
+.ayah-box {
+    padding: 30px 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.ayah {
+    font-family: 'Reem Kufi', serif;
+    font-size: 1.8rem;
+    color: var(--color-gold);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+/* عناوين الفئات */
+.section-title {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.section-desc {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* تطبيقات السبح المطورة للكمبيوتر والموبايل */
+.tasbeeh-app {
+    padding: 40px 0;
+}
+
+.sebha-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.sebha-card {
+    background: var(--bg-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    border-radius: 28px;
+    padding: 35px 20px;
+    text-align: center;
+    transition: var(--luxury-transition);
+    width: 100%;
+}
+
+.sebha-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.reset-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: var(--luxury-transition);
+    padding: 5px;
+}
+
+.reset-btn:hover {
+    color: #ff4d4d;
+    transform: rotate(90deg);
+}
+
+.counter-val {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 15px 0;
+    font-family: 'Segoe UI', monospace, sans-serif;
+    color: #fff;
+    transition: var(--luxury-transition);
+}
+
+.action-btn {
+    width: 100%;
+    padding: 18px 10px;
+    border: none;
+    border-radius: 16px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--luxury-transition);
+    min-height: 62px;
+}
+
+/* فخامة ألوان السبح */
+.gold-glow:hover {
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.08);
+}
+.gold-glow:hover .counter-val {
+    color: var(--color-gold);
+    text-shadow: 0 0 20px var(--color-gold-glow);
+}
+.btn-gold {
+    background: linear-gradient(135deg, #f39c12, var(--color-gold));
+    color: #000;
+}
+.btn-gold:hover {
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    transform: translateY(-3px);
+}
+
+.purple-glow:hover {
+    border-color: rgba(155, 93, 229, 0.3);
+    box-shadow: 0 20px 50px rgba(155, 93, 229, 0.08);
+}
+.purple-glow:hover .counter-val {
+    color: var(--color-purple);
+    text-shadow: 0 0 20px var(--color-purple-glow);
+}
+.btn-purple {
+    background: linear-gradient(135deg, #7209b7, var(--color-purple));
+    color: #fff;
+}
+.btn-purple:hover {
+    box-shadow: 0 10px 30px rgba(155, 93, 229, 0.4);
+    transform: translateY(-3px);
+}
+
+.action-btn:active {
+    transform: translateY(1px) scale(0.98);
+}
+
+/* استعراض الأدعية الـ 40 */
+.dua-showcase {
+    padding: 40px 0 80px 0;
+}
+
+.dua-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.dua-item {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    border-radius: 18px;
+    padding: 25px 20px;
+    transition: var(--luxury-transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dua-item p {
+    font-size: 0.95rem;
+    color: #b3c0d1;
+    text-align: center;
+}
+
+.medical-dua {
+    border-right: 3px solid rgba(212, 175, 55, 0.3);
+}
+
+.dua-item:hover {
+    background: var(--bg-glass);
+    border-color: rgba(255, 255, 255, 0.08);
+    transform: scale(1.03) translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+.dua-item:hover p {
+    color: #fff;
+}
+
+/* الفوتر الـ VIP اللامع */
+.vip-footer {
+    background: #030508;
+    padding: 45px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    width: 100%;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-msg {
+    color: var(--text-muted);
+    font-size: 1rem;
+    flex: 1;
+    min-width: 280px;
+    line-height: 1.7;
+}
+
+.dev-credits {
+    font-size: 0.85rem;
+    color: #4b5563;
+    text-align: left;
+    min-width: 200px;
+}
+
+.dev-credits span {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.designer-tag {
+    color: var(--color-gold);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: var(--luxury-transition);
+}
+
+.designer-tag::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    right: 0;
+    background-color: var(--color-gold);
+    transition: var(--luxury-transition);
+}
+
+.designer-tag:hover {
+    text-shadow: 0 0 10px var(--color-gold-glow);
+}
+
+.designer-tag:hover::after {
+    width: 100%;
+}
+
+/* نظام التجاوب الاحترافي الكامل مع الشاشات والموبايل */
+@media (max-width: 992px) {
+    .vip-header h1 { font-size: 2.4rem; }
+    .sebha-wrapper { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+    .vip-header { padding: 40px 0 20px 0; }
+    .vip-badge { font-size: 0.8rem; padding: 6px 15px; margin-bottom: 20px; }
+    .vip-header h1 { font-size: 1.8rem; }
+    .hero-subtitle { font-size: 0.95rem; }
+    
+    .profile-image-wrapper { width: 130px; height: 130px; margin: 20px auto; }
+    
+    .ayah { font-size: 1.35rem; }
+    .section-title { font-size: 1.3rem; padding: 0 5px; }
+    .section-desc { font-size: 0.9rem; margin-bottom: 30px; }
+    
+    .sebha-wrapper { grid-template-columns: 1fr; gap: 20px; }
+    .sebha-card { padding: 25px 15px; }
+    .counter-val { font-size: 3.5rem; margin: 10px 0; }
+    .action-btn { font-size: 1rem; padding: 15px 10px; min-height: 55px; }
+    
+    .dua-showcase { padding: 30px 0 60px 0; }
+    .dua-grid { grid-template-columns: 1fr; gap: 15px; }
+    .dua-item { padding: 20px 15px; }
+    
+    .footer-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-msg { text-align: center; }
+    .dev-credits { text-align: center; width: 100%; }
+}
+
+/* ضبط خاص للموبايلات الصغيرة جداً وبطاقات الـ VIP */
+@media (max-width: 380px) {
+    .vip-header h1 { font-size: 1.5rem; }
+    .ayah { font-size: 1.15rem; }
+    .counter-val { font-size: 3rem; }
+    .action-btn { font-size: 0.9rem; }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صدقة جارية | منصة الدعاء والذكر</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- خطوط بريميوم متناسقة -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الإضاءة الخلفية العلوية المودرن -->
+    <div class="bg-glow"></div>
+
+    <!-- الهيدر الرئيسي -->
+    <header class="vip-header">
+        <div class="container">
+            <div class="vip-badge">     في ثواب المغفور له(عادل شندي محمد ابودقة) </div>
+            <h1>اللهم ابدِل ألمه راحة وجنة</h1>
+            <p class="hero-subtitle">صدقة جارية عن روح فقيدنا الغالي(عادل شندي محمد ابودقة) - نسألكم الدعاء له بالرحمة والمغفرة</p>
+        </div>
+        <!-- أضف هذا السطر هنا (مكان الصورة) -->
+            <div class="profile-image-wrapper">
+                <img src="images/d826ff11-ff6d-4e3b-9264-adbea4b02f1a.jpg" alt="baba3adel" class="deceased-photo">
+            </div>
+    </header>
+
+    <!-- قسم الآية القرآنية بتصميم زجاجي -->
+    <section class="quran-container">
+        <div class="container">
+            <div class="glass-panel ayah-box">
+                <p class="ayah">"إِنَّمَا يُوَفَّى الصَّابِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍ"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- المسبحة الإلكترونية الـ VIP المزدوجة -->
+    <section class="tasbeeh-app">
+        <div class="container">
+            <h2 class="section-title"> "وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا" </h2>
+            <div class="sebha-wrapper">
+                
+                <!-- مسبحة الاستغفار -->
+                <div class="sebha-card gold-glow">
+                    <div class="sebha-header">
+                        <span>سُبْحَةُ الاسْتِغْفَار</span>
+                        <button class="reset-btn" onclick="resetCounter('istighfar')" title="تصفير">✕</button>
+                    </div>
+                    <div class="counter-val" id="istighfar-display">0</div>
+                    <button class="action-btn btn-gold" onclick="incrementCounter('istighfar')">أستغفر الله العظيم وأتوب إليه</button>
+                </div>
+
+                <!-- مسبحة التسبيح -->
+                <div class="sebha-card purple-glow">
+                    <div class="sebha-header">
+                        <span>سُبْحَةُ التَّسْبِيح</span>
+                        <button class="reset-btn" onclick="resetCounter('praise')" title="تصفير">✕</button>
+                    </div>
+                    <div class="counter-val" id="praise-display">0</div>
+                    <button class="action-btn btn-purple" onclick="incrementCounter('praise')">سبحان الله وبحمده، سبحان الله العظيم</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- شبكة الأدعية الـ 40 الكبرى (مرتبة ومخصصة لألم المرض والرحمة) -->
+    <section class="dua-showcase">
+        <div class="container">
+            <h2 class="section-title">أدعية للمتوفي</h2>
+            <p class="section-desc">        "ادعوا له اليوم سراً علّ الله يسخر لكم من يدعو لكم بعد رحيلكم.. فالدعاء للميت دَينٌ مسترد، وما تزرعونه في قبور غيركم اليوم، ستحصدونه في قبوركم غداً." </p>
+            
+            <div class="dua-grid">
+                <!-- مجموعة أدعية كفارة المرض والألم (20 دعاء) -->
+                <div class="dua-item medical-dua"><p>1. اللهم اجعل كل ألمٍ أصابه في مرضه كفارةً لسيئاته ورفعاً لدرجاته في الجنة.</p></div>
+                <div class="dua-item medical-dua"><p>2. اللهم أبدله بفراش المرض فراشاً من سندس واستبرق في أعلى الجنان.</p></div>
+                <div class="dua-item medical-dua"><p>3. اللهم إن جَسده قد ضَعف وصبر على البلاء، فاجعل جزاء صبره جنةً عَرْضها السماوات والأرض.</p></div>
+                <div class="dua-item medical-dua"><p>4. اللهم اغسله من ذنوبه بساعات الألم التي قضاها، واجعلها طهوراً ونوراً لقبره.</p></div>
+                <div class="dua-item medical-dua"><p>5. اللهم إن مرضه كان تطهيراً له، فاحشره اليوم مع الصابرين الموفين أجورهم.</p></div>
+                <div class="dua-item medical-dua"><p>6. اللهم عوض شبابه وأيامه التي سلبها المرض بمقعد صدقٍ عند مليك مقتدر.</p></div>
+                <div class="dua-item medical-dua"><p>7. اللهم إن ألم المرض قد انتهى، وبقيت رحمتك التي لا تنتهي، فارحم ضعفه ووحدته.</p></div>
+                <div class="dua-item medical-dua"><p>8. اللهم اجعل الأنين الذي أنّه في مرضه تسبيحاً وذكراً يرفع مقامه في عليين.</p></div>
+                <div class="dua-item medical-dua"><p>9. اللهم كما حرمته العافية في الدنيا صبراً واحتساباً، فلا تحرمه لذة النظر لوجهك الكريم.</p></div>
+                <div class="dua-item medical-dua"><p>10. اللهم إنك ابتليته فصبر، فاجعل ليل مرضه الطويل ضياءً ونوراً ممتداً في قبره.</p></div>
+                <div class="dua-item medical-dua"><p>11. اللهم ابعثه برائحة المسك، وضياء الفجر، وضمان العفو والرضوان.</p></div>
+                <div class="dua-item medical-dua"><p>12. اللهم اجعل مرضه حجاباً بينه وبين النار، وسبباً لدفء قبره وأمانه.</p></div>
+                <div class="dua-item medical-dua"><p>13. اللهم انقل من ضيق الوجع والأنفاس إلى سعة خلود الجنان وعيشها الرغيد.</p></div>
+                <div class="dua-item medical-dua"><p>14. اللهم اكتبه من الشهداء، فإن المبطون والمصعوق وصاحب الهدم والألم شهيد.</p></div>
+                <div class="dua-item medical-dua"><p>15. اللهم ارحم جسداً نحل، وعظاماً وهنت في سبيل مواجهة المرض، وجازه بالإحسان إحساناً.</p></div>
+                <div class="dua-item medical-dua"><p>16. اللهم سكن وجعه في بطن الأرض، وآنس وحشته، واجعل روحه في سدر مخضود.</p></div>
+                <div class="dua-item medical-dua"><p>17. اللهم يسر حسابه كما كان صابراً على بلائه، وتجاوز عنه بحلمك يا رحيم.</p></div>
+                <div class="dua-item medical-dua"><p>18. اللهم اجعل كل شربة دواء تجرعها في مرضه شربةً هنيةً من حوض نبيك لا يظمأ بعدها.</p></div>
+                <div class="dua-item medical-dua"><p>19. اللهم إن رحمتك سبقت عذابك، فامنحه الطمأنينة الكاملة والسكينة في مرقده.</p></div>
+                <div class="dua-item medical-dua"><p>20. اللهم ارزقه شفاء الروح والجسد في برزخك، وافتح له باباً إلى الجنة لا يغلق.</p></div>
+
+                <!-- مجموعة أدعية الرحمة العامة والمغفرة والجنة (20 دعاء) -->
+                <div class="dua-item"><p>21. اللهم اغفر له وارحمه، وعافه واعف عنه، وأكرم نزله، ووسع مدخله.</p></div>
+                <div class="dua-item"><p>22. اللهم نقّه من الخطايا كما ينقى الثوب الأبيض من الدنس.</p></div>
+                <div class="dua-item"><p>23. اللهم آنس وحشته، وآنس في القبر غربته، واجعل قبره مناراً من نورك.</p></div>
+                <div class="dua-item"><p>24. اللهم اجعل قبره روضة من رياض الجنة، ولا تجعله حفرة من حفر النيران.</p></div>
+                <div class="dua-item"><p>25. اللهم املأ قبره بالرضا، والنور، والفسحة، والسرور.</p></div>
+                <div class="dua-item"><p>26. اللهم إنه في ذمتك وحبل جوارك، فقِهِ فتنة القبر، وعذاب النار.</p></div>
+                <div class="dua-item"><p>27. اللهم أمّنه من فزع يوم القيامة، ومن هول يوم القيامة، واجعل نفسه آمنة مطمئنة.</p></div>
+                <div class="dua-item"><p>28. اللهم ارزقه الفردوس الأعلى من الجنة بغير حساب ولا سابقة عذاب.</p></div>
+                <div class="dua-item"><p>29. اللهم اجمعه مع النبيين والصديقين والشهداء والصالحين في جنات النعيم.</p></div>
+                <div class="dua-item"><p>30. اللهم يمن كتابه، ويسر حسابه، وثقل بالحسنات ميزانه، وثبت على الصراط أقدامه.</p></div>
+                <div class="dua-item"><p>31. اللهم اسقه من حوض نبيك محمد ﷺ شربة هنيئة مريئة لا يظمأ بعدها أبداً.</p></div>
+                <div class="dua-item"><p>32. اللهم ابنِ له بيتاً في الجنة، واجعل ذلك البيت مزاراً لملائكتك بالرحمة.</p></div>
+                <div class="dua-item"><p>33. اللهم ارفع درجته في المهديين، واخلفه في عقبه في الغابرين، واغفر لنا وله يا رب.</p></div>
+                <div class="dua-item"><p>34. اللهم اجعل عن يمينه نوراً، وعن شماله نوراً، ومن فوقه نوراً، ومن تحته نوراً.</p></div>
+                <div class="dua-item"><p>35. اللهم إن كان محسناً فزد في حسناته، وإن كان مسيئاً فتجاوز عن سيئاته.</p></div>
+                <div class="dua-item"><p>36. اللهم انظر إليه نظرة رضا، فإن من تنظر إليه نظرة رضا لا تعذبه أبداً.</p></div>
+                <div class="dua-item"><p>37. اللهم أسكنه فسيح الجنان، واغفر له يا رحمن، وارحمه يا رحيم.</p></div>
+                <div class="dua-item"><p>38. اللهم هب له من لدنك رحمة ومغفرة واسعة تبلغه بها أعلى درجات عفوك.</p></div>
+                <div class="dua-item"><p>39. اللهم اجعل أعماله الصالحة في الدنيا أنيساً جليساً له في قبره ومؤنساً لوحشته.</p></div>
+                <div class="dua-item"><p>40. اللهم تقبل منا هذا العمل وهذا الدعاء واجعله صدقة جارية تصله وتنير ظلمته.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر الـ VIP الاحترافي للغاية -->
+    <footer class="vip-footer">
+        <div class="container footer-box">
+            <p class="footer-msg">الدعاء يغير القدر فلا تبخلوا به على من انقطعت أعمالهم.</p>
+            <p class="footer-msg">    "انقطع عمله ونحن رجاؤه.. فلا تخرج قبل أن ترفع يدك وتسأل الله له المغفرة، فلعلك أقربنا إلى الله منزلة وأصدقنا دعاءً.".</p>
+            <div class="dev-credits">
+                <span>Designed & Developed Luxury Edition By</span>
+                <a href="#" class="designer-tag">karim-shendy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
